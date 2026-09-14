@@ -1,0 +1,82 @@
+/* Personal settings, connector specifications and mobile app availability. */
+#nuda-os-proposal .os-settings-tabs { margin-bottom: 25px; }
+#nuda-os-proposal .os-settings-tabs .os-tabs { margin-bottom: 0; }
+#nuda-os-proposal .os-settings-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(280px, 1fr); gap: 22px; align-items: start; }
+#nuda-os-proposal .os-settings-grid > * { min-width: 0; }
+#nuda-os-proposal .os-setting-space { margin-top: 20px; }
+#nuda-os-proposal .os-setting-copy { margin: 10px 0 18px; }
+#nuda-os-proposal .os-setting-person { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+#nuda-os-proposal .os-setting-person .os-avatar { height: 46px; flex-basis: 46px; font-size: 15px; }
+#nuda-os-proposal .os-setting-person > .os-badge { margin-left: auto; }
+#nuda-os-proposal .os-connect-hero { padding: 32px; border: 1px solid var(--os-line); border-radius: 16px; background: linear-gradient(110deg, var(--os-paper), var(--os-soft)); display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(220px, 1fr); gap: 28px; align-items: center; }
+#nuda-os-proposal .os-connect-hero h2, #nuda-os-proposal .os-app-hero h2 { font-size: clamp(25px, 2.5vw, 33px); letter-spacing: -1px; line-height: 1.22; }
+#nuda-os-proposal .os-connect-hero p:not(.os-eyebrow) { font-size: 14px; color: var(--os-muted); margin: 16px 0 24px; max-width: 520px; }
+#nuda-os-proposal .os-connection-map { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; }
+#nuda-os-proposal .os-app-monogram { width: 66px; height: 66px; background: #11272c; color: #80dedb; border-radius: 17px; font: 700 51px Arial, sans-serif; text-align: center; line-height: 66px; box-shadow: 0 10px 25px #15343c14; }
+#nuda-os-proposal .os-connection-agent { display: grid; place-items: center; width: 66px; height: 66px; border-radius: 17px; border: 1px solid var(--os-line); background: var(--os-paper); color: var(--os-accent); }
+#nuda-os-proposal .os-connection-agent svg { width: 28px; height: 28px; }
+#nuda-os-proposal .os-connection-line { height: 1px; width: 24px; background: var(--os-accent); opacity: .35; }
+#nuda-os-proposal .os-connection-protocol { padding: 7px 10px; color: var(--os-accent); border: 1px solid var(--os-line); background: var(--os-paper); border-radius: 8px; font-size: 11px; font-weight: 600; letter-spacing: 1px; }
+#nuda-os-proposal .os-connection-map small { flex-basis: 100%; margin-top: 20px; font-size: 11px; color: var(--os-muted); text-align: center; }
+#nuda-os-proposal .os-setting-notice { display: flex; gap: 12px; padding: 16px 3px; margin: 4px 0 14px; color: var(--os-muted); font-size: 12px; align-items: flex-start; }
+#nuda-os-proposal .os-setting-notice > svg { flex-shrink: 0; margin-top: 2px; }
+#nuda-os-proposal .os-setting-notice strong { color: var(--os-ink); font-weight: 500; }
+#nuda-os-proposal .os-connector-row { display: flex; align-items: center; gap: 15px; padding: 22px; border-top: 1px solid var(--os-line); flex-wrap: wrap; }
+#nuda-os-proposal .os-connector-title { flex: 1; min-width: 190px; overflow-wrap: anywhere; }
+#nuda-os-proposal .os-setting-empty { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; padding: 34px 22px; border-top: 1px solid var(--os-line); }
+#nuda-os-proposal .os-setting-empty .os-button { margin-top: 6px; }
+#nuda-os-proposal .os-setting-features { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 28px; margin-top: 26px; padding: 0 4px; }
+#nuda-os-proposal .os-setting-features svg { color: var(--os-accent); margin-bottom: 8px; }
+#nuda-os-proposal .os-setting-features h3 { margin-bottom: 5px; }
+#nuda-os-proposal .os-setting-fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+#nuda-os-proposal .os-setting-fieldset legend { font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; margin-bottom: 15px; color: var(--os-muted); }
+#nuda-os-proposal .os-fixed-permission { display: flex; gap: 12px; align-items: center; margin-bottom: 16px; padding: 12px; background: var(--os-bg); border-radius: 9px; font-size: 13px; flex-wrap: wrap; }
+#nuda-os-proposal .os-fixed-permission > .os-badge { margin-left: auto; }
+#nuda-os-proposal .os-permission-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+#nuda-os-proposal .os-permission { position: relative; text-align: left; background: var(--os-paper); border: 1px solid var(--os-line); color: var(--os-ink); border-radius: 10px; padding: 17px 14px; display: flex; flex-direction: column; gap: 6px; }
+#nuda-os-proposal .os-permission[aria-pressed="true"] { background: var(--os-soft); border-color: var(--os-accent); }
+#nuda-os-proposal .os-permission > svg { color: var(--os-accent); margin-bottom: 7px; }
+#nuda-os-proposal .os-permission strong { font-size: 13px; font-weight: 600; }
+#nuda-os-proposal .os-permission small { font-size: 11px; color: var(--os-muted); line-height: 1.6; }
+#nuda-os-proposal .os-permission-check { display: grid; place-items: center; border: 1px solid var(--os-line); border-radius: 50%; width: 20px; height: 20px; color: var(--os-muted); flex-shrink: 0; }
+#nuda-os-proposal .os-permission > .os-permission-check { position: absolute; top: 12px; right: 12px; }
+#nuda-os-proposal [aria-pressed="true"] > .os-permission-check { background: var(--os-accent); border-color: var(--os-accent); color: var(--os-accent-ink); }
+#nuda-os-proposal .os-permission-check svg { width: 13px; height: 13px; }
+#nuda-os-proposal .os-connector-members { display: flex; flex-direction: column; gap: 8px; }
+#nuda-os-proposal .os-connector-member { border: 1px solid var(--os-line); border-radius: 9px; padding: 11px 12px; background: var(--os-paper); color: var(--os-ink); text-align: left; display: flex; gap: 12px; align-items: center; }
+#nuda-os-proposal .os-connector-member[aria-pressed="true"] { border-color: var(--os-accent); background: var(--os-soft); }
+#nuda-os-proposal .os-connector-member strong { display: block; font-size: 12px; }
+#nuda-os-proposal .os-connector-member small { font-size: 11px; color: var(--os-muted); }
+#nuda-os-proposal .os-connector-member .os-permission-check { margin-left: auto; }
+#nuda-os-proposal .os-scope-pills { display: flex; gap: 6px; flex-wrap: wrap; margin: 18px 0; }
+#nuda-os-proposal .os-scope-pills code { font: 11px/1.5 ui-monospace,monospace; background: var(--os-bg); color: var(--os-accent); border: 1px solid var(--os-line); border-radius: 5px; padding: 3px 6px; }
+#nuda-os-proposal .os-preview-count { display: flex; gap: 10px; justify-content: space-between; padding: 10px 0; border-top: 1px solid var(--os-line); font-size: 12px; }
+#nuda-os-proposal .os-preview-count strong { font-weight: 500; text-align: right; }
+#nuda-os-proposal .os-endpoint { background: var(--os-bg); border: 1px dashed var(--os-line); border-radius: 10px; padding: 17px; margin-top: 22px; }
+#nuda-os-proposal .os-endpoint > p:not(.os-eyebrow) { font-size: 13px; margin-bottom: 5px; }
+#nuda-os-proposal .os-setup-steps { list-style: none; counter-reset: setup; margin: 24px 0; padding: 0; display: flex; flex-direction: column; gap: 22px; }
+#nuda-os-proposal .os-setup-steps > li { display: flex; align-items: flex-start; gap: 14px; counter-increment: setup; }
+#nuda-os-proposal .os-setup-steps > li::before { content: counter(setup); display: grid; place-items: center; flex: 0 0 28px; height: 28px; background: var(--os-soft); border-radius: 50%; font-size: 12px; font-weight: 600; color: var(--os-accent); }
+#nuda-os-proposal .os-setup-steps p { font-size: 13px; color: var(--os-muted); margin: 3px 0 9px; }
+#nuda-os-proposal .os-doc-scopes > div { display: flex; gap: 16px; justify-content: space-between; flex-wrap: wrap; padding: 13px 0; border-bottom: 1px solid var(--os-line); font-size: 13px; }
+#nuda-os-proposal .os-doc-scopes code { font-size: 12px; color: var(--os-accent); }
+#nuda-os-proposal .os-setting-links { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin-top: 20px; }
+#nuda-os-proposal .os-app-hero { background: linear-gradient(120deg,#112e33,#175652); color: #effaf7; border-radius: 16px; padding: 32px; }
+#nuda-os-proposal .os-app-identity { display: flex; align-items: center; gap: 22px; }
+#nuda-os-proposal .os-app-identity img { border-radius: 22px; flex-shrink: 0; }
+#nuda-os-proposal .os-app-hero h2 { color: #effaf7; }
+#nuda-os-proposal .os-app-hero > p { max-width: 540px; font-size: 14px; color: #c6e4df; margin: 18px 0 24px; }
+#nuda-os-proposal .os-app-hero .os-eyebrow, #nuda-os-proposal .os-app-hero > .os-caption { color: #b4d5ce; }
+#nuda-os-proposal .os-app-hero > .os-caption { font-size: 12px; margin-bottom: 0; }
+#nuda-os-proposal .os-app-hero .os-primary { background: #d7f5e9; color: #123c37; border-color: #d7f5e9; }
+#nuda-os-proposal .os-app-hero .os-badge { background: #ffffff13; color: #d1eae5; border: 1px solid #ffffff25; }
+#nuda-os-proposal .os-mobile-store-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+#nuda-os-proposal .os-mobile-store { padding: 24px; border: 1px solid var(--os-line); border-radius: 12px; background: var(--os-bg); }
+#nuda-os-proposal .os-mobile-store h3 { font-size: 17px; margin-top: 18px; }
+#nuda-os-proposal .os-mobile-store .os-sub { font-size: 14px; margin-top: 4px; }
+#nuda-os-proposal .os-store-button { margin: 22px 0 10px; min-width: 165px; background: var(--os-paper); }
+#nuda-os-proposal .os-store-button:disabled { opacity: .65; cursor: default; }
+@media(max-width:650px){#nuda-os-proposal .os-mobile-store-grid{grid-template-columns:1fr}}
+@media(max-width:1100px){#nuda-os-proposal .os-settings-grid{grid-template-columns:minmax(0,1.4fr) minmax(240px,1fr)}#nuda-os-proposal .os-connect-hero{grid-template-columns:1fr}#nuda-os-proposal .os-connection-map{display:none}}
+@media(max-width:850px){#nuda-os-proposal .os-settings-grid{grid-template-columns:1fr}#nuda-os-proposal .os-setting-features{gap:18px}#nuda-os-proposal .os-connect-hero,#nuda-os-proposal .os-app-hero{padding:24px}}
+@media(max-width:550px){#nuda-os-proposal .os-setting-features{grid-template-columns:1fr}#nuda-os-proposal .os-permission-grid{grid-template-columns:1fr}#nuda-os-proposal .os-app-identity{gap:15px}#nuda-os-proposal .os-app-identity img{width:62px;height:62px;border-radius:16px}#nuda-os-proposal .os-settings-tabs .os-tabs{overflow:auto}#nuda-os-proposal .os-connector-row{padding:18px}#nuda-os-proposal .os-setting-person>.os-badge{margin-left:0}}

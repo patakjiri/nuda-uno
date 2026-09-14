@@ -1,0 +1,107 @@
+/* nuda uno: actionable notifications, portfolio opportunities and organization messages. */
+#nuda-os-proposal .os-notices {
+  top: 66px; right: 24px; width: min(540px, calc(100% - 32px));
+  max-height: min(790px, calc(100dvh - 90px)); display: flex; flex-direction: column;
+  overflow: hidden; border-radius: 16px; z-index: 20;
+  box-shadow: 0 18px 64px #142b3426, 0 2px 8px #142b340a;
+}
+#nuda-os-proposal .os-notice-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 22px 22px 16px; flex-shrink: 0; }
+#nuda-os-proposal .os-notice-heading h2 { font-size: 19px; letter-spacing: -.4px; }
+#nuda-os-proposal .os-notice-heading p { margin-top: 5px; font-size: 12px; }
+#nuda-os-proposal .os-notice-tabs { display: flex; gap: 5px; padding: 0 16px 13px; overflow-x: auto; flex-shrink: 0; border-bottom: 1px solid var(--os-line); }
+#nuda-os-proposal .os-notice-tabs button { display: flex; align-items: center; justify-content: center; gap: 7px; border: 0; padding: 8px 11px; min-height: 38px; border-radius: 8px; color: var(--os-muted); background: transparent; font-size: 14px; white-space: nowrap; }
+#nuda-os-proposal .os-notice-tabs button:hover { background: var(--os-bg); }
+#nuda-os-proposal .os-notice-tabs button[aria-pressed="true"] { color: var(--os-accent); background: var(--os-soft); font-weight: 600; }
+#nuda-os-proposal .os-notice-tabs button span { font-size: 12px; font-weight: 500; min-width: 18px; height: 20px; text-align: center; border-radius: 5px; background: var(--os-bg); }
+#nuda-os-proposal .os-notice-tabs button[aria-pressed="true"] span { background: var(--os-paper); }
+#nuda-os-proposal .os-notice-controls { padding: 12px 22px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 14px; border-bottom: 1px solid var(--os-line); flex-shrink: 0; }
+#nuda-os-proposal .os-notice-controls .os-link { font-size: 12px; }
+#nuda-os-proposal .os-notice-filter { background: transparent; color: var(--os-muted); display: inline-flex; align-items: center; gap: 6px; padding: 5px 0; min-height: 30px; font-size: 12px; border: 0; }
+#nuda-os-proposal .os-notice-filter svg { width: 13px; height: 13px; }
+#nuda-os-proposal .os-notice-filter[aria-pressed="true"] { font-weight: 600; color: var(--os-accent); }
+#nuda-os-proposal .os-notice-feed { overflow-y: auto; overscroll-behavior: contain; min-height: 0; scrollbar-width: thin; }
+#nuda-os-proposal .os-notice-card { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 13px; padding: 20px 22px; border-bottom: 1px solid var(--os-line); background: var(--os-paper); }
+#nuda-os-proposal .os-notice-card:last-child { border-bottom: 0; }
+#nuda-os-proposal .os-notice-symbol { color: var(--os-accent); background: var(--os-soft); display: grid; place-items: center; border-radius: 10px; width: 34px; height: 34px; flex-shrink: 0; }
+#nuda-os-proposal .os-notice-symbol svg { width: 18px; height: 18px; stroke-width: 1.7; }
+#nuda-os-proposal .is-opportunities .os-notice-symbol { background: light-dark(#eff2fc, #303953); color: light-dark(#5261a6, #b7c3ff); }
+#nuda-os-proposal .is-messages .os-notice-symbol { background: light-dark(#edf2f6, #2c3c49); color: light-dark(#526d84, #b0cce3); }
+#nuda-os-proposal .os-notice-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 0 6px; color: var(--os-muted); font-size: 12px; line-height: 1.5; }
+#nuda-os-proposal .os-unread-dot { display: inline-block; width: 6px; height: 6px; flex-shrink: 0; background: var(--os-accent); border-radius: 50%; }
+#nuda-os-proposal .os-notice-copy h3 { font-size: 15px; line-height: 1.45; font-weight: 500; letter-spacing: -.1px; overflow-wrap: anywhere; }
+#nuda-os-proposal .is-unread .os-notice-copy h3 { font-weight: 600; }
+#nuda-os-proposal .os-notice-copy > p { margin-top: 5px; color: var(--os-muted); font-size: 14px; line-height: 1.55; overflow-wrap: anywhere; }
+#nuda-os-proposal .is-messages .os-notice-copy > p { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+#nuda-os-proposal .os-notice-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 10px; }
+#nuda-os-proposal .os-notice-tags .os-badge { font-size: 12px; padding: 3px 7px; font-weight: 400; }
+#nuda-os-proposal .os-notice-tags time { font-size: 12px; color: var(--os-muted); }
+#nuda-os-proposal .os-notice-actions { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
+#nuda-os-proposal .os-notice-actions .os-link { font-size: 14px; }
+#nuda-os-proposal .os-notice-textbtn { border: 0; background: transparent; color: var(--os-muted); padding: 5px 0; font-size: 12px; white-space: nowrap; }
+#nuda-os-proposal .os-notice-textbtn:hover { color: var(--os-accent); }
+#nuda-os-proposal .os-notice-readbtn { margin-left: auto; border: 0; color: var(--os-muted); background: transparent; padding: 7px; border-radius: 7px; display: inline-flex; align-items: center; justify-content: center; }
+#nuda-os-proposal .os-notice-readbtn:hover { background: var(--os-soft); color: var(--os-accent); }
+#nuda-os-proposal .os-notice-readbtn svg { width: 15px; height: 15px; }
+#nuda-os-proposal .os-notice-bottom { padding: 14px 20px; border-top: 1px solid var(--os-line); background: var(--os-paper); display: flex; align-items: center; justify-content: space-between; flex-shrink: 0; gap: 14px; }
+#nuda-os-proposal .os-notice-bottom .os-link { font-size: 13px; }
+#nuda-os-proposal .os-inbox { max-width: 1080px; overflow: hidden; }
+#nuda-os-proposal .os-inbox .os-notice-tabs { padding: 18px 18px 14px; }
+#nuda-os-proposal .os-inbox .os-notice-card { padding: 24px; gap: 16px; }
+#nuda-os-proposal .os-inbox .os-notice-copy h3 { font-size: 17px; }
+#nuda-os-proposal .os-inbox .os-notice-copy > p { max-width: 800px; }
+#nuda-os-proposal .os-inbox .os-notice-actions { justify-content: flex-start; }
+#nuda-os-proposal .os-snoozed { padding: 24px; max-width: 1080px; margin-top: 22px; }
+#nuda-os-proposal .os-snoozed .os-between { margin-top: 16px; gap: 18px; }
+#nuda-os-proposal .os-opportunity-reason { display: flex; gap: 18px; padding: 25px; margin-bottom: 24px; }
+#nuda-os-proposal .os-opportunity-reason > div:last-child { min-width: 0; max-width: 950px; }
+#nuda-os-proposal .os-opportunity-reason p { margin: 9px 0 17px; font-size: 16px; }
+#nuda-os-proposal .os-opportunity-reason h3 { margin-top: 20px; font-size: 15px; }
+#nuda-os-proposal .os-opportunity-reason .os-caption { font-size: 12px; color: var(--os-muted); margin-bottom: 0; }
+#nuda-os-proposal .os-opportunity-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 19px 24px; border-bottom: 1px solid var(--os-line); }
+#nuda-os-proposal .os-opportunity-row:last-child { border-bottom: 0; }
+#nuda-os-proposal .os-opportunity-row > div:first-child { min-width: 0; }
+#nuda-os-proposal .os-opportunity-row > div:first-child .os-link { font-size: 15px; font-weight: 600; }
+#nuda-os-proposal .os-opportunity-row .os-sub { font-size: 13px; }
+#nuda-os-proposal .os-opportunity-row .os-head-actions { flex-shrink: 0; }
+#nuda-os-proposal .os-message-thread,
+#nuda-os-proposal .os-message-new { max-width: 980px; }
+#nuda-os-proposal .os-message-sender { display: flex; align-items: center; gap: 13px; padding: 25px 28px; border-bottom: 1px solid var(--os-line); }
+#nuda-os-proposal .os-message-sender strong { font-size: 15px; font-weight: 600; }
+#nuda-os-proposal .os-message-sender time { color: var(--os-muted); font-size: 12px; margin-left: auto; }
+#nuda-os-proposal .os-message-body { padding: 28px; }
+#nuda-os-proposal .os-message-body > p { font-size: 16px; line-height: 1.8; margin-bottom: 18px; max-width: 760px; }
+#nuda-os-proposal .os-message-reference { margin-top: 25px; background: var(--os-bg); border: 1px solid var(--os-line); padding: 14px 18px; border-radius: 10px; display: flex; align-items: center; gap: 12px; }
+#nuda-os-proposal .os-message-reference > svg { color: var(--os-muted); }
+#nuda-os-proposal .os-message-reference .os-button { background: transparent; border: 0; text-align: left; padding: 0; color: var(--os-accent); justify-content: flex-start; }
+#nuda-os-proposal .os-message-compose { padding: 25px 28px; border-top: 1px solid var(--os-line); }
+#nuda-os-proposal .os-message-compose .os-between,
+#nuda-os-proposal .os-message-new .os-between { margin-top: 16px; gap: 18px; }
+#nuda-os-proposal .os-message-compose textarea,
+#nuda-os-proposal .os-message-new textarea { min-height: 160px; font-size: 16px; line-height: 1.6; }
+#nuda-os-proposal .os-message-new .os-field + .os-field { margin-top: 20px; }
+@media (max-width: 900px) {
+  #nuda-os-proposal .os-opportunity-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+  #nuda-os-proposal .os-message-sender { flex-wrap: wrap; }
+  #nuda-os-proposal .os-message-sender time { margin-left: 49px; }
+}
+@media (max-width: 580px) {
+  #nuda-os-proposal .os-notices { position: fixed; top: 12px; right: 12px; left: 12px; width: auto; max-height: calc(100dvh - 24px); z-index: 40; }
+  #nuda-os-proposal .os-notice-heading { padding: 18px 16px 14px; }
+  #nuda-os-proposal .os-notice-tabs { padding-left: 10px; padding-right: 10px; }
+  #nuda-os-proposal .os-notice-tabs button { padding: 8px; }
+  #nuda-os-proposal .os-notice-controls { padding: 10px 16px; }
+  #nuda-os-proposal .os-notice-card,
+  #nuda-os-proposal .os-inbox .os-notice-card { padding: 18px 16px; grid-template-columns: 28px minmax(0, 1fr); gap: 10px; }
+  #nuda-os-proposal .os-notice-symbol { width: 28px; height: 28px; border-radius: 8px; }
+  #nuda-os-proposal .os-notice-symbol svg { width: 16px; height: 16px; }
+  #nuda-os-proposal .os-notice-actions { gap: 8px; flex-wrap: wrap; }
+  #nuda-os-proposal .os-notice-bottom { padding: 12px 16px; flex-wrap: wrap; gap: 8px; }
+  #nuda-os-proposal .os-opportunity-reason { padding: 18px; gap: 12px; }
+  #nuda-os-proposal .os-opportunity-row { padding: 18px; }
+  #nuda-os-proposal .os-message-sender,
+  #nuda-os-proposal .os-message-body,
+  #nuda-os-proposal .os-message-compose { padding: 20px; }
+  #nuda-os-proposal .os-message-compose .os-between,
+  #nuda-os-proposal .os-message-new .os-between,
+  #nuda-os-proposal .os-snoozed .os-between { align-items: flex-start; flex-direction: column; }
+}
